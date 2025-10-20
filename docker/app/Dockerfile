@@ -1,7 +1,7 @@
 # ========================================
 # Base Stage: Alpine Linux with Bun
 # ========================================
-FROM node:22-alpine AS base
+FROM node:25-alpine AS base
 
 # ========================================
 # Dependencies Stage: Install Dependencies
