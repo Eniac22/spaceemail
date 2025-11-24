@@ -16,7 +16,7 @@ jobs:
     if: github.event.issue.pull_request && contains(github.event.issue.labels.*.name, 'production-deploy') && startsWith(github.event.comment.body, '/deploy') && github.event.comment.author_association == 'MEMBER'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
